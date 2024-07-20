@@ -1,0 +1,161 @@
+*{
+    font-family: Inter;
+
+
+}
+
+.depoiments{
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+
+.text{
+    margin-bottom: 3rem;
+}
+
+.text h2{
+    font-family: Orbitron; 
+    text-align: center;
+    font-size: 35px;
+}
+
+.text label{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    gap:3rem;
+    max-width: 80%;
+}
+
+.card{
+    max-width: 33.3%;
+    padding: 1rem;
+    border: 2px solid #320646;
+    border-radius: 15px;
+    transition: border 0.3s ease;
+}
+
+.card:hover{
+    border: 2px solid #590e7c;
+}
+
+.star{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.star img{
+    min-width: 4rem;
+}
+
+.cardText label{
+    font-size: 14px;
+}
+
+.cardBottom{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cardBottom img{
+    min-height: 2rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name h4{
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    .depoiments {
+        padding-top: 5%;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        gap: 2rem;
+        max-width: 90%;
+    }
+
+    .card {
+        max-width: 45%;
+    }
+
+    .cardText label {
+        font-size: 12px;
+    }
+
+    .name h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .depoiments {
+        padding-top: 3%;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .card {
+        max-width: 80%;
+    }
+
+    .cardText label {
+        font-size: 11px;
+    }
+
+    .name h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .depoiments {
+        padding-top: 15%;
+    }
+
+    .text h2 {
+        font-size: 20px;
+    }
+
+    .cards {
+        gap: 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .cardText label {
+        font-size: 10px;
+    }
+
+    .name h4 {
+        font-size: 12px;
+    }
+}
+

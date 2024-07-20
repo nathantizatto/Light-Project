@@ -1,0 +1,71 @@
+*{
+    font-family: Inter;
+}
+
+.headsets{
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 7%;
+}
+
+.headsets h2{
+    font-family: Orbitron;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.photos img{
+    width: 22%;
+}
+
+@media (max-width: 1024px) {
+    .headsets {
+        padding-top: 5%;
+    }
+
+    .headsets h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .photos img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .headsets {
+        padding-top: 3%;
+    }
+
+    .headsets h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .photos img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .headsets {
+        padding-top: 15%;
+    }
+
+    .headsets h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .photos img {
+        width: 100%;
+    }
+}

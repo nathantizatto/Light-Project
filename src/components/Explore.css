@@ -1,0 +1,157 @@
+*{
+    font-family: Inter;
+}
+
+.explore{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding-top: 7%;
+}
+
+.exploreText{
+    width: 50%;
+}
+.exploreText h2{
+    font-family: Orbitron;
+    font-size: 1.8rem;
+}
+
+
+.form{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.form input{
+    padding: 14px;
+    font-size: 20px;
+    font-family: Inter;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #391d63;
+    transition: border .3s ease;
+}
+
+.form input:hover{
+    border: 1px solid #ffffff;
+}
+
+.form button{
+    font-family: Inter;
+    width: 7rem;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #1f0231;
+    border: 1px solid #956fce;
+    transition: border .3s ease;
+    cursor: pointer;
+}
+
+.form button:hover{
+    border: 1px solid #28083a;
+}
+
+.exploreImage{
+    width: 50%;
+}
+
+.exploreImage img{
+    width: 70%;
+}
+
+@media (max-width: 1024px) {
+    .explore {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 5%;
+    }
+
+    .exploreText {
+        width: 60%;
+    }
+
+    .exploreText h2 {
+        font-size: 1.6rem;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .form input {
+        font-size: 18px;
+    }
+
+    .form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .exploreImage {
+        width: 100%;
+    }
+
+    .exploreImage img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore {
+        padding-top: 3%;
+    }
+
+    .exploreText {
+        width: 70%;
+    }
+
+    .exploreText h2 {
+        font-size: 1.4rem;
+    }
+
+    .form input {
+        font-size: 16px;
+    }
+
+    .form button {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .exploreImage img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore {
+        padding-top: 15%;
+    }
+
+    .exploreText {
+        width: 100%;
+    }
+
+    .exploreText h2 {
+        font-size: 1.2rem;
+    }
+
+    .form input {
+        font-size: 14px;
+    }
+
+    .form button {
+        margin: 0 auto;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .exploreImage img {
+        display: none;
+    }
+}

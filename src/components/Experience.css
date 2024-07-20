@@ -1,0 +1,111 @@
+*{
+    font-family: Inter;
+}
+
+
+.experience{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15rem;
+    padding-top: 8%;
+
+}
+
+.photosExperience{
+   display: flex;
+   gap: 2rem;
+   width: 50%;
+}
+
+.photosExperience img{
+    width: 100%;
+}
+
+.experienceText h3{
+    font-family: Orbitron;
+    font-size: 30px;
+}
+
+.experienceText label{
+    font-size: 15px;
+}
+
+
+.experienceButton button{
+    background-color:#BC3CD8;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 6rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.experienceButton button:hover{
+    background-color: #69107d;
+}
+
+@media (max-width: 1024px) {
+    .experience {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 5%;
+    }
+
+    .photosExperience {
+        width: 100%;
+    }
+
+    .experienceText h3 {
+        font-size: 25px;
+    }
+
+    .experienceText label {
+        font-size: 14px;
+    }
+
+    .experienceButton button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        gap: 3rem;
+        padding-top: 3%;
+    }
+
+    .experienceText h3 {
+        font-size: 22px;
+    }
+
+    .experienceText label {
+        font-size: 13px;
+    }
+
+    .experienceButton button {
+        padding: 8px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding-top: 10%;
+    }
+
+    .experienceText h3 {
+        font-size: 20px;
+    }
+
+    .experienceText label {
+        font-size: 12px;
+    }
+
+    .experienceButton button {
+        padding: 6px;
+    }
+}

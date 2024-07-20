@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
+import Depoiments from './components/Depoiments';
+import Experience from './components/Experience';
+import Explore from './components/Explore';
+import Footer from './components/Footer';
+import Headsets from './components/Headsets';
+import Main from './components/Main';
+import NavBar from './components/NavBar';
+import Values from './components/Values';
 
 function App() {
+  const scrollToRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar scrollToRef={scrollToRef}/>
+      <Main scrollToRef={scrollToRef} /> 
+      <Experience scrollToRef={scrollToRef}/>
+      <Headsets/>
+      <Depoiments/>
+      <Values/>
+      <Explore scrollToRef={scrollToRef} />
+      <Footer/>
     </div>
   );
 }
