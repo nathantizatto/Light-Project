@@ -1,4 +1,3 @@
-.```markdown
 (PT-BR)
 # Light - Uma Experiência Virtual Tridimensional
 
